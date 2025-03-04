@@ -1,11 +1,11 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
-  --font-zentry: 'zentry', 'sans-serif';
-  --font-general: 'general', 'sans-serif';
-  --font-circular-web: 'circular-web', 'sans-serif';
-  --font-robert-medium: 'robert-medium', 'sans-serif';
-  --font-robert-regular: 'robert-regular', 'sans-serif';
+  --font-zentry: "zentry", "sans-serif";
+  --font-general: "general", "sans-serif";
+  --font-circular-web: "circular-web", "sans-serif";
+  --font-robert-medium: "robert-medium", "sans-serif";
+  --font-robert-regular: "robert-regular", "sans-serif";
 
   --color-blue-50: #dfdff0;
   --color-blue-75: #dfdff2;
@@ -63,8 +63,8 @@
 
 @utility special-font {
   & b {
-    font-family: 'Zentry';
-    font-feature-settings: 'ss01' on;
+    font-family: "zentry";
+    font-feature-settings: "ss01" on;
   }
 }
 
@@ -105,7 +105,7 @@
 
 @utility story-img-container {
   @apply relative md:h-dvh h-[90vh] w-full;
-  filter: url('#flt_tag');
+  filter: url("#flt_tag");
 }
 
 @utility story-img-mask {
@@ -168,6 +168,11 @@ body {
   @font-face {
     font-family: "robert-regular";
     src: url("/fonts/robert-regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "zentry";
+    src: url("/fonts/zentry-regular.woff2") format("woff2");
   }
 }
 
