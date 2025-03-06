@@ -13,7 +13,7 @@
   --color-blue-200: #010101;
   --color-blue-300: #4fb7dd;
 
-  --color-violet-300: hsl(255 80% 70%);
+  --color-violet-300: #5724ff;
 
   --color-yellow-100: #8e983f;
   --color-yellow-100: #edff66;
@@ -109,7 +109,7 @@
 }
 
 @utility story-img-mask {
-  @apply absolute left-0 top-0 size-full overflow-hidden md:left-[20%] md:top-[-10%] md:size-4/5;
+  @apply absolute left-0 size-full overflow-hidden md:left-[20%] top-[-20%] md:top-[-10%] md:size-4/5;
   clip-path: polygon(4% 0, 83% 21%, 100% 73%, 0% 100%);
 }
 
@@ -147,6 +147,7 @@ body {
   width: 100dvw;
   background-color: #dfdff0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 @layer base {
